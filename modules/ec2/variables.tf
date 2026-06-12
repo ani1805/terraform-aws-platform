@@ -1,24 +1,24 @@
 variable "environment" {
-    type = string
-  
+  type = string
+
 }
 
 variable "ami_id" {
-    type = string
+  type = string
 }
 
 variable "ec2_instance_type" {
-    type = string
+  type = string
 }
 
 variable "public_subnet_id" {
-    type = string
+  type = string
 }
 
 variable "security_group_id" {
-    type = string
+  type = string
 }
 
 variable "key_pair_name" {
-    type = string
+  type = string
 }

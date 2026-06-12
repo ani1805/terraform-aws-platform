@@ -1,5 +1,5 @@
 terraform {
-    required_version = ">=1.0"
+  required_version = ">=1.0"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -7,12 +7,12 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "prod-terraform-state-bucket-227957186238"
-    region = "ap-south-1"
-    key = "prod/terraform.tfstate"
+    bucket         = "prod-terraform-state-bucket-227957186238"
+    region         = "ap-south-1"
+    key            = "prod/terraform.tfstate"
     dynamodb_table = "prod-terraform-lock"
   }
 }
 provider "aws" {
-    region = var.aws_region
+  region = var.aws_region
 }

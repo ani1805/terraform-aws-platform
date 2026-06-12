@@ -1,33 +1,33 @@
 variable "rds_instance_class" {
-    type = string
+  type = string
 }
 
 variable "allocated_storage" {
-    type = number
+  type = number
 }
 
 variable "username" {
-    type = string
-    sensitive = true
+  type      = string
+  sensitive = true
 }
 
 variable "password" {
-    type = string
-    sensitive = true
+  type      = string
+  sensitive = true
 }
 
 variable "environment" {
-    type = string
+  type = string
 }
 
 variable "vpc_security_group_ids" {
-    type = set(string)
+  type = set(string)
 }
 
 variable "subnet_ids" {
-    type = set(string)
+  type = set(string)
 }
 
 variable "rds_db_name" {
-    type = string
+  type = string
 }
