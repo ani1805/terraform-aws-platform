@@ -50,7 +50,6 @@ module "rds_instance" {
   vpc_security_group_ids = [module.rds_security_group.security_group_id]
   allocated_storage      = var.rds_allocated_storage
   username               = var.rds_username
-  password               = var.rds_password
   rds_instance_class     = var.rds_instance_class
   rds_db_name            = var.rds_db_name
 }
