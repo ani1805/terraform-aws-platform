@@ -12,5 +12,5 @@ ec2_instance_type          = "t3.micro"
 key_pair_name              = "anish-key"
 rds_allocated_storage      = 10
 rds_instance_class         = "db.t3.micro"
-rds_username               = "staging_db_user"
-rds_db_name                = "stagingDB"
+rds_username               = "prod_db_user"
+rds_db_name                = "prodDB"
