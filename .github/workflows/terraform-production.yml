@@ -1,17 +1,17 @@
-name: Terraform Staging Deployment
+name: Terraform Production Deployment
 
 on:
     push:
-        branches:
-            - main
+        tags:
+            - 'v*.*.*'
 
 jobs:
-    staging-deployment:
+    production-deployment:
         runs-on: ubuntu-latest
-        environment: staging
+        environment: production
         defaults:
             run:
-                working-directory: environments/staging
+                working-directory: environments/production
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4
