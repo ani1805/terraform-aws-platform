@@ -8,7 +8,7 @@ resource "aws_db_instance" "name" {
   allocated_storage      = var.allocated_storage
   identifier             = "${var.environment}-rds-instance"
   username               = var.username
-  password               = var.password
+  manage_master_user_password = true
   skip_final_snapshot    = true
   tags = {
     Name        = "${var.environment}-rds-instance"

@@ -11,11 +11,6 @@ variable "username" {
   sensitive = true
 }
 
-variable "password" {
-  type      = string
-  sensitive = true
-}
-
 variable "environment" {
   type = string
 }
